@@ -1,0 +1,26 @@
+Mihu Florin
+324CC
+
+	Tema 1 - IOCLA
+
+	Citim arborele cu ajutorul functiei getAST si se pune adresa radacinii 
+in registrul ebx. Apelam functia recursiva get_nodes, ce compara intai daca 
+adresa structurii este egala cu NULL. Dereferentiem de doua ori pentru a afla 
+valoarea efectiva din nodul curent. Comparam valoarea cu cea a operanzilor, 
+daca este una dintre ele, adaugam valoarea operandului in vectorul input_array. 
+Daca valoarea introdusa nu este cea a unui operator, prelucram numarul dat, 
+dupa ce salvam valorile registrelor pe stiva. Cu ajutorul registrului esi 
+parcurgem fiecare caracter din sirul ce contine valoarea ASCII a valorii 
+din nod. Verificam daca primul caracter este minus si setam un flag in caz 
+afirmativ. Apoi, scadem din valoarea byte-ului curent valoarea caracterului 
+'0' si adaugam cifra obtinuta la numarul curent ce se afla in registrul eax. 
+Daca flagul de numar negativ este activat, negam numarul, apoi adaugam in 
+input_array valoarea din registru. Restauram valorile vechi de pe stiva si 
+continuam recursiv cu apeluri pe subarborii stang si drept.
+	Aflam lungimea vectorului input_array construit anterior si salvam 
+valoarea in registrul eax. Parcurgem vectorul invers si, intai, verificam daca 
+avem un operand, in caz afirmativ luam doua valori de pe stiva, facem operatia 
+corespunzatoare si salvam rezultatul pe stiva. Daca valoarea din vector nu era 
+cea a unui operand doar adaugam pe stiva numarul respectiv. In final, printam 
+valoarea rezultatului din registrul eax si eliberam memoria alocata arborelui 
+cu ajutorul functiei freeAST.
