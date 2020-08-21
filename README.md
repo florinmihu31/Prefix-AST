@@ -2,7 +2,7 @@
 
 ### Description
 
-* Homework for the Assembly Languages course which aimed to calcute a mathematical expression, after reading an abstract syntactic tree containing operands and operators.
+* Homework for the Assembly Languages course which aimed to calculate a mathematical expression, after reading an abstract syntactic tree containing operands and operators.
 
 ### Languages
 
