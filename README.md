@@ -6,4 +6,4 @@
 
 ### Languages
 
-* The homework was made using NASM Assembler.
+* The homework was made using x86 Assembly.
